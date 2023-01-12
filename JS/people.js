@@ -1,0 +1,8 @@
+function displayPeople(){
+
+
+}
+
+function addPeople(){
+    
+}

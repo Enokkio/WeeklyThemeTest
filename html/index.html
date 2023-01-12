@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    
+    <div class="main flex justify-around ">
+
+        <div class="people flex flex-col  justify-center items-center bg-orange-600 w-full">
+            People
+            <div>
+                <select size="3"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">  <!-- Note: I've removed the 'multiple' attribute -->
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </div>
+            <div>
+                <div>
+                    <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
+                    <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+                </div>
+                <div>
+                    <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
+                    <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+                </div>
+                <div>
+                    <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Number</label>
+                    <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+                </div>
+
+            </div>
+
+            <div class="flex mt-5 mb-5">
+                <button class=" addPeople bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                    Add 
+                </button>
+
+                <button class="bg-red-700 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                    Delete
+                </button>
+
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                    Edit
+                </button>
+
+            </div>
+        </div>
+
+
+        <div class="people flex flex-col items-center bg-teal-600 w-full">
+            Themes
+            <div>
+                <select size="3"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">  <!-- Note: I've removed the 'multiple' attribute -->
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </div>
+            <div>
+                <div>
+                    <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Theme Name</label>
+                    <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="" required>
+                </div>
+               
+            </div>
+
+            <div class="flex mt-5 mb-5">
+                <button class=" addPeople bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                    Add 
+                </button>
+
+                <button class="bg-red-700 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                    Delete
+                </button>
+
+            </div>
+        </div>
+
+
+        <div class="weekly flex flex-col bg-indigo-600  w-full">
+            Weekly
+            <div>
+
+            </div>
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    
+
+
+    <script src="../JS/index.js"></script>
+
+</body>
+</html>
