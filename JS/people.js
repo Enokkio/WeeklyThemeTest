@@ -46,12 +46,17 @@ export function editPeople(array){
   else{
 if (editor == true) {
   var editButton = document.getElementById("editButton");
-  editButton.value = "Edit"
+  editButton.innerHTML = "Edit"
   console.log( document.getElementById("firstName").value )
   array[value].firstName = document.getElementById("firstName").value 
   array[value].lastName= document.getElementById("lastName").value
   array[value].number = document.getElementById("number").value
   value = null;
+
+
+  document.getElementById("firstName").value = ""
+  document.getElementById("lastName").value = ""
+  document.getElementById("number").value = ""
   
 }
 else{

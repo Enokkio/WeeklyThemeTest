@@ -1,5 +1,7 @@
 import {addPeople,deletePeople,clearPeople,editPeople,checkval} from './people.js'
 import {addTheme,deletethemes,clearThemes} from './themes.js'
+import {generateWeekly} from './weeklyTheme.js'
+
 
 
 
@@ -46,12 +48,13 @@ if (localStorage.getItem("people") == null)
  }
 
 
+
  if (localStorage.getItem("history") == null)
  {
-    localStorage.setItem("history",historyArray)   
+    localStorage.setItem("history",JSON.stringify(historyArray))   
  }
  else{
-    historyArray = localStorage.getItem("history")
+    historyArray = JSON.parse(localStorage.getItem("history"))
  }
 
 
@@ -94,6 +97,12 @@ editButton.addEventListener("click", function(){
     editPeople(peopleArray)
 });
 
+
+let weeklyGenerate = document.getElementById("weeklyGenerate")
+weeklyGenerate.addEventListener("click", function(){
+    generateWeekly(themesArray,peopleArray,historyArray);
+});
+
 console.log("successfully run setup")
 }
 
@@ -125,8 +134,8 @@ for (let i = 0; i < themesArray.length; i++) {
 }
 
 }
-
 setup()
+
 updatePeopleThemes();
 
 

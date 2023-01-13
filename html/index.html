@@ -13,7 +13,7 @@
     <div class="main flex justify-around ">
 
         <div class="people flex flex-col  justify-center items-center bg-orange-600 w-full">
-            People
+            <div><b>People</b></div>
             <div>
                 <select size="3"  id="peopleList" class="  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">  <!-- Note: I've removed the 'multiple' attribute -->
               
@@ -56,7 +56,8 @@
 
 
         <div class="themes flex flex-col items-center bg-teal-600 w-full">
-            Themes
+            <div><b>Themes</b></div>
+
             <div>
                 <select size="3"  id="themesList"class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">  <!-- Note: I've removed the 'multiple' attribute -->
               
@@ -71,7 +72,7 @@
             </div>
 
             <div class="flex mt-5 mb-5">
-                <button id= "addThemesButton"class=" bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                <button id= "addThemesButton"class=" bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full ">
                     Add 
                 </button>
 
@@ -86,17 +87,24 @@
         </div>
 
 
-        <div class="themes flex flex-col items-center bg-indigo-600 w-full">
-            Weekly
+        <div class="themes flex flex-col items-center bg-indigo-600 w-full ">
+            <div><b>Weekly</b></div>
+
+            <div class="flex space-x-4 mb-5 ">
+                <div id= "person1"class="flex justify-center items-center  w-32 h-14 bg-white bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"">
+                  01
+                </div>
+                <div id="displayTheme"class="  flex justify-center items-center  w-64 bg-white bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"">
+                  02
+                </div>
+                <div id="person2"class=" flex justify-center items-center  w-32 bg-white bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"">
+                  03
+                </div>
+              </div>
+         
             <div>
 
-            </div>
-            <div>
-                
-            </div>
-            <div>
-
-                <button id="clearThemesButton" class="bg-slate-600 hover:bg-grey-700 text-white font-bold py-2 px-4 rounded-full">
+                <button id="weeklyGenerate" class="bg-slate-600 hover:bg-grey-700 text-white font-bold py-2 px-4 rounded-full">
                     Generate
                 </button>
                 
