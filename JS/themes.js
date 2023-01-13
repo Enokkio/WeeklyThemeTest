@@ -18,6 +18,21 @@ localStorage.setItem("themes",JSON.stringify(array))
 updatePeopleThemes();
 }
 
+export function clearThemes(array){
+
+    var selectobject = document.getElementById("peopleList");
+
+    selectobject.innerHTML="";
+  
+
+    array = [];
+
+window.location.reload()
+localStorage.setItem("themes",JSON.stringify(array))   
+updatePeopleThemes();
+
+}
+
 export function addTheme(array){
     var canAdd = true;
    let theme = document.getElementById("themeInput").value

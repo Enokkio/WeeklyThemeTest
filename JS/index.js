@@ -1,5 +1,5 @@
-import {addPeople,deletePeople} from './people.js'
-import {addTheme,deletethemes} from './themes.js'
+import {addPeople,deletePeople,clearPeople,editPeople,checkval} from './people.js'
+import {addTheme,deletethemes,clearThemes} from './themes.js'
 
 
 
@@ -66,6 +66,23 @@ deleteThemesButton.addEventListener("click", function(){
     deletethemes(themesArray)
 });
 
+let clearThemesButton = document.getElementById("clearThemesButton")
+clearThemesButton.addEventListener("click", function(){
+    clearThemes(themesArray)
+});
+
+let clearPeopleButton = document.getElementById("clearPeopleButton")
+clearPeopleButton.addEventListener("click", function(){
+    clearPeople(peopleArray)
+});
+
+let editButton = document.getElementById("editButton")
+editButton.addEventListener("click", function(){
+    checkval()
+
+    editPeople(peopleArray)
+});
+
 console.log("successfully run setup")
 }
 
@@ -93,7 +110,6 @@ for (let i = 0; i < themesArray.length; i++) {
     var opt = document.createElement('option');
     opt.value = i;
     opt.innerHTML = `${themesArray[i]}`;
-    console.log(themesArray[i])
     selectTheme.appendChild(opt);    
 }
 
