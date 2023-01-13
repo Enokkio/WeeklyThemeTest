@@ -4,7 +4,18 @@ import {addTheme,deletethemes,clearThemes} from './themes.js'
 
 
 var peopleArray = [];
-var themesArray = ["70-talet","80-talet","90-Talet","Golf"];
+
+
+var themesArray = [
+    "50-tal",
+    "60-tal",
+    "70-tal",
+    "80-tal",
+    "90-tal",
+    "Jazz",
+    "Superhjältar",
+    "Antagonister",
+    "Rustikt och robust"];
 var historyArray = [];
 
 
