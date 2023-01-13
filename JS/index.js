@@ -1,5 +1,5 @@
 import {addPeople,deletePeople} from './people.js'
-import {addTheme} from './themes.js'
+import {addTheme,deletethemes} from './themes.js'
 
 
 
@@ -61,6 +61,10 @@ deletePeopleButton.addEventListener("click", function(){
     deletePeople(peopleArray)
 });
 
+let deleteThemesButton = document.getElementById("deleteThemesButton")
+deleteThemesButton.addEventListener("click", function(){
+    deletethemes(themesArray)
+});
 
 console.log("successfully run setup")
 }
