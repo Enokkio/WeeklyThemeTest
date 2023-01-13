@@ -72,6 +72,7 @@ else{
 }
 }
 
+localStorage.setItem("people",JSON.stringify(array))   
 updatePeopleThemes();
 
 
