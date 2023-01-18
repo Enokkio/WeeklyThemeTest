@@ -9,7 +9,7 @@ export function checkval(){
   
   if (editor == false) {
     value = selectobject.value;
-
+    
   }
 
   
@@ -39,6 +39,8 @@ updatePeopleThemes();
 export function editPeople(array){
 
   if (value == null) {
+    console.log(value)
+    console.log(editor)
     alert("select person to edit")
 
   }
@@ -52,6 +54,7 @@ if (editor == true) {
   array[value].lastName= document.getElementById("lastName").value
   array[value].number = document.getElementById("number").value
   value = null;
+  editor = false;
 
 
   document.getElementById("firstName").value = ""

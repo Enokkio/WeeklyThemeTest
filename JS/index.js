@@ -97,6 +97,11 @@ editButton.addEventListener("click", function(){
     editPeople(peopleArray)
 });
 
+let selectobject = document.getElementById("peopleList");
+selectobject.addEventListener("click", function(){
+    console.log("i am checking value")
+    checkval()
+});
 
 let weeklyGenerate = document.getElementById("weeklyGenerate")
 weeklyGenerate.addEventListener("click", function(){
